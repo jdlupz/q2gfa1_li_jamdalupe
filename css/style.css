@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    margin: 0;
+}
+
+.pagetitle {
+    color: white;
+    font-size: 3vh ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+a{
+    font-size: 3vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    background-color: #090c9b;
+    justify-content: space-around;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+
+#twitter{
+    background-position: -66px -72px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#youtube{
+    background-position: -439px -221px;
+}
+
+#tumblr{
+    background-position: -216px -146px;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #3066be;
+    }
+    .pagetitle{
+        background-color: #3066be;
+        padding: 1vw;
+        color: black;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color:#b4c5e4;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }   
+    .links a{
+        color: black;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: block;
+    }
+    .links a:hover{background-color: #ddd; transition: .5s;}
+    nav:hover .links{display: block; transition: .5s; padding-left: 2em;}
+    nav:hover .pagetitle{background-color: #bf8c53; transition: .5s;}
+}
+
+#vidbg{ 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1; 
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.banner {
+    font-family: 'Lora', serif;
+    margin-top: 10vw;
+    padding: 5vw;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: -15vw;
+    background-color: #3c3744;
+}
+
+.bannerhead {
+    font-size: 5em;
+    color: white;
+}
+
+article p{
+    padding-top: 2vh;
+    font-size: 4vh;
+    color: white;
+}
